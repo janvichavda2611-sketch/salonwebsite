@@ -19,11 +19,15 @@ nav a{
 
 .container{
 padding:30px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
 }
 
 .banner{
-width:80%;
-max-width:800px;
+width:50%;
+max-width:400px;
 border-radius:15px;
 }
 
@@ -39,20 +43,24 @@ cursor:pointer;
 
 .service-card{
 background:white;
-width:300px;
-margin:20px auto;
-padding:15px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
+width:140px;
+margin:10px;
+padding:10px;
+display:inline-block;
+vertical-align:top;
 }
 
 .service-card img{
 width:100%;
-border-radius:10px;
+height:120px;
+object-fit:cover;
+
 }
 
 .image-row{
     display:flex;
+	gap:20px;
+	flex-wrap:wrap;
     justify-content:center;
     gap:20px;
 }
@@ -88,4 +96,24 @@ color:white;
 
 .container h1{
 	width:100%;
+}
+
+@media screen and (max-width: 768px){
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .service-card{
+        width:90%;
+    }
+
+    .banner{
+        width:100%;
+    }
+
+    input, select{
+        width:90%;
+    }
 }
